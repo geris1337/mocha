@@ -41,4 +41,7 @@ describe('IMDb Test Case', function () {
             done();
         });
     });
+    after(function () {
+        driver.quit();
+    });
 });
