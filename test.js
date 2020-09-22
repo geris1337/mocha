@@ -15,11 +15,13 @@ describe('IMDb Test Case', function () {
             });
         });
     });
+    
     it('Search for "game of thrones"', function (done) {
         driver.findElement(By.id("suggestion-search")).sendKeys("game of thrones", webdriver.Key.ENTER).then(() => {
             done();
         });
     });
+    
     it('Find and open Video Game related search results', function (done) {
         driver.wait(until.elementLocated(By.linkText("Video Game")), 10000).click().then(() => {
             done();
@@ -41,6 +43,7 @@ describe('IMDb Test Case', function () {
             done();
         });
     });
+    
     after(function () {
         driver.quit();
     });
