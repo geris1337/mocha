@@ -20,3 +20,4 @@ npm test
 * [Node.js](https://nodejs.org/) - Backend
 * [Mocha](https://mochajs.org/) - Framework
 * [Chai](https://www.chaijs.com/) - BDD / TDD assertion library
+* [Selenium](https://www.npmjs.com/package/selenium-webdriver/) - Browser automation library
